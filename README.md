@@ -110,3 +110,7 @@ nrow(subset(clean_data, ride_duration < 0))
 * Saturday is the busiest day in general
 * Weekends are the busiest days for casuals, but members tend to use the bikes more during the week.
 * Summer and Autumn are the busiest seasons.
+
+## Key Insights
+
+## Conclusions
