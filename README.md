@@ -23,21 +23,90 @@ Lack of demographic data like age or gender.
 Absence of membership prices.
 Data for electric bikes is incomplete, 27% is missing the start station name.
 
-## **Process**
+## **Prepare**
 R is well-suited for cleaning and processing large datasets, data for this project has more than 5 million rows, so because of Its efficient memory management, vectorized operations, and extensive packages I have chosen R for cleaning and processing. Microsoft Excel to create the charts and Power Point to create the presentation.
 
 ### Installing and loading necessary packages
  ```ruby
-This is a test.doc
+install.packages("tidyverse")
+install.packages("dplyr")
+install.packages("writexl")
 
+library(tidyverse)
+library(dplyr)
+library(writexl)
 ```
-  
+### Importing data to R Studio
+```ruby
+May_2022 <- read_csv("G:\\My Drive\\Data Analytics\\Capstone Project\\Data\\Tripdata\\202205-divvy-tripdata.csv")
+June_2022 <- read_csv("G:\\My Drive\\Data Analytics\\Capstone Project\\Data\\Tripdata\\202206-divvy-tripdata.csv")
+July_2022 <- read_csv("G:\\My Drive\\Data Analytics\\Capstone Project\\Data\\Tripdata\\202207-divvy-tripdata.csv")
+August_2022 <- read_csv("G:\\My Drive\\Data Analytics\\Capstone Project\\Data\\Tripdata\\202208-divvy-tripdata.csv")
+September_2022 <- read_csv("G:\\My Drive\\Data Analytics\\Capstone Project\\Data\\Tripdata\\202209-divvy-publictripdata.csv")
+October_2022 <- read_csv("G:\\My Drive\\Data Analytics\\Capstone Project\\Data\\Tripdata\\202210-divvy-tripdata.csv")
+November_2022 <- read_csv("G:\\My Drive\\Data Analytics\\Capstone Project\\Data\\Tripdata\\202211-divvy-tripdata.csv")
+December_2022 <- read_csv("G:\\My Drive\\Data Analytics\\Capstone Project\\Data\\Tripdata\\202212-divvy-tripdata.csv")
+January_2023 <- read_csv("G:\\My Drive\\Data Analytics\\Capstone Project\\Data\\Tripdata\\202301-divvy-tripdata.csv")
+February_2023 <- read_csv("G:\\My Drive\\Data Analytics\\Capstone Project\\Data\\Tripdata\\202302-divvy-tripdata.csv")
+March_2023 <- read_csv("G:\\My Drive\\Data Analytics\\Capstone Project\\Data\\Tripdata\\202303-divvy-tripdata.csv")
+April_2023 <- read_csv("G:\\My Drive\\Data Analytics\\Capstone Project\\Data\\Tripdata\\202304-divvy-tripdata.csv")
+```
+### Merging data into a data frame
+```ruby
+trip_data <- rbind(May_2022, June_2022, July_2022, August_2022, September_2022, October_2022, November_2022, December_2022, January_2023, February_2023, March_2023, April_2023)
+```
+## Process - Cleaning
 
+### Reviewing 
+```ruby
+nrow(trip_data)
+ncol(trip_data)
+head(trip_data)
+tail(trip_data)
+str(trip_data)
+summary(trip_data)
+colnames(trip_data)
+```
+### Removing NA's
+```ruby
+sum(is.na(trip_data))
+trip_data <- na.omit(trip_data)
+```
 
+### Adding new columns for duration, distance, year, month, day of week and hour of day
+```ruby
+trip_data_v2 <- trip_data %>% 
+mutate(ride_duration = difftime(ended_at, started_at, units = "mins")) %>% 
+mutate(ride_distance = distHaversine(cbind(start_lng, start_lat), cbind(end_lng, end_lat))) %>% 
+mutate(ride_year = year(started_at)) %>% 
+mutate(ride_month = month(started_at, label = TRUE)) %>% 
+mutate(day_of_week = weekdays(started_at)) %>% 
+mutate(hour_of_day = hour(started_at))
+```
+### Cleaning data
+
+      ##Trips w/o start station
+      ##Trips w/o ending station
+      ##Trips with duration > 0
+      ##Trips with distance > 0
+```ruby
+clean_data <- trip_data_v2 %>% 
+  filter(!is.na(start_station_name)) %>% 
+  filter(!is.na(end_station_name)) %>% 
+  filter(ride_duration >0) %>% 
+  filter(ride_distance >0)
+```
+### Double checking cleaned data
+```ruby
+nrow(subset(clean_data, start_station_name < 0))
+nrow(subset(clean_data, end_station_name < 0))
+nrow(subset(clean_data, ride_distance < 0))
+nrow(subset(clean_data, ride_duration < 0))
+```
 
 ## **Analysis**
 
-Classic Bikes are more popular.
-Saturday is the busiest day in general
-Weekends are the busiest days for casuals, but members tend to use the bikes more during the week.
-Summer and Autumn are the busiest seasons.
+* Classic Bikes are more popular.
+* Saturday is the busiest day in general
+* Weekends are the busiest days for casuals, but members tend to use the bikes more during the week.
+* Summer and Autumn are the busiest seasons.
