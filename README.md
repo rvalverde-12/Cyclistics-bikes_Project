@@ -25,7 +25,15 @@ Data for electric bikes is incomplete, 27% is missing the start station name.
 
 ## **Process**
 R is well-suited for cleaning and processing large datasets, data for this project has more than 5 million rows, so because of Its efficient memory management, vectorized operations, and extensive packages I have chosen R for cleaning and processing. Microsoft Excel to create the charts and Power Point to create the presentation.
-Installing and loading necessary packages
+
+### Installing and loading necessary packages
+ ```ruby
+This is a test.doc
+
+```
+  
+
+
 
 ## **Analysis**
 
