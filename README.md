@@ -6,9 +6,9 @@ Goal: To understand the differences in how annual members and casual riders use 
 
 ### **Data Overview**
 
-5,800 bicycles and 600 docking stations installed around Chicago. <br>
-[Dataset](https://divvy-tripdata.s3.amazonaws.com/index.htm) consists of 12 CSV files each per month with 13 columns and 5,859,061 rows. 
-Data is stored in Amazon Web Server and is owned by Motivate International Inc under this [license](https://ride.divvybikes.com/data-license-agreement).
+* 5,800 bicycles and 600 docking stations installed around Chicago. <br>
+* [Dataset](https://divvy-tripdata.s3.amazonaws.com/index.htm) consists of 12 CSV files each per month with 13 columns and 5,859,061 rows. <br>
+* Data is stored in Amazon Web Server and is owned by Motivate International Inc under this [license](https://ride.divvybikes.com/data-license-agreement).
 
 ### ROCCC approach is used to determine the credibility of the data
 
