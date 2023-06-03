@@ -1,5 +1,4 @@
-# Cyclistics Bikes Project
-# **Google Data Analytics Capstone Project**
+# **Google Data Analytics Capstone Project - Cyclistics Bikes**
 
 ## **Project Overview**
 
@@ -23,11 +22,11 @@ Lack of demographic data like age or gender.
 Absence of membership prices.
 Data for electric bikes is incomplete, 27% is missing the start station name.
 
-# **Process**
+## **Process**
 R is well-suited for cleaning and processing large datasets, data for this project has more than 5 million rows, so because of Its efficient memory management, vectorized operations, and extensive packages I have chosen R for cleaning and processing. Microsoft Excel to create the charts and Power Point to create the presentation.
 Installing and loading necessary packages
 
-# **Analysis**
+## **Analysis**
 
 Classic Bikes are more popular.
 Saturday is the busiest day in general
