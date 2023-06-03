@@ -12,10 +12,11 @@ Data is stored in Amazon Web Server and is owned by Motivate International Inc u
 
 ### ROCCC approach is used to determine the credibility of the data
 
-Reliable: The data is relevant, complete, consistent and it represents all bike rides taken in the city of Chicago for the selected duration of our analysis.
-Original: The data is made available by Motivate International Inc. which operates the city of Chicago.
-Comprehensive: The data covers a wide range of relevant variables, details including starting time, ending time, station name, station ID, type of membership and many more.
-Current – It is up-to-date as it includes data until end of April 2023. The data is cited and is available under Data License Agreement.
+
+*Reliable: The data is relevant, complete, consistent and it represents all bike rides taken in the city of Chicago for the selected duration of our analysis.
+*Original: The data is made available by Motivate International Inc. which operates the city of Chicago.
+*Comprehensive: The data covers a wide range of relevant variables, details including starting time, ending time, station name, station ID, type of membership and many more.
+*Current – It is up-to-date as it includes data until end of April 2023. The data is cited and is available under Data License Agreement.
 
 ### **Data Limitation**
 Lack of demographic data like age or gender.
