@@ -21,7 +21,7 @@ Goal: To understand the differences in how annual members and casual riders use 
 ### **Data Limitation**
 * Lack of demographic data like age or gender.<br>
 * Absence of membership prices.<br>
-* Data for electric bikes is incomplete, 27% is missing the start station name.<br>
+* 27% of all electric bikes are missing the start station name.<br>
 
 ## **Prepare**
 R is well-suited for cleaning and processing large datasets, data for this project has more than 5 million rows, so because of Its efficient memory management, vectorized operations, and extensive packages I have chosen R for cleaning and processing. Microsoft Excel to create the charts and Power Point to create the presentation.
