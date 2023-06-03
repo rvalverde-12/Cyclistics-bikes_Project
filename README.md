@@ -19,9 +19,9 @@ Goal: To understand the differences in how annual members and casual riders use 
 * Current – It is up-to-date as it includes data until end of April 2023. The data is cited and is available under Data License Agreement.
 
 ### **Data Limitation**
-Lack of demographic data like age or gender.
-Absence of membership prices.
-Data for electric bikes is incomplete, 27% is missing the start station name.
+* Lack of demographic data like age or gender.<br>
+* Absence of membership prices.<br>
+* Data for electric bikes is incomplete, 27% is missing the start station name.<br>
 
 ## **Prepare**
 R is well-suited for cleaning and processing large datasets, data for this project has more than 5 million rows, so because of Its efficient memory management, vectorized operations, and extensive packages I have chosen R for cleaning and processing. Microsoft Excel to create the charts and Power Point to create the presentation.
