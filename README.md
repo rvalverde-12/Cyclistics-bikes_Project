@@ -111,6 +111,8 @@ nrow(subset(clean_data, ride_duration < 0))
 * Weekends are the busiest days for casuals, but members tend to use the bikes more during the week.
 * Summer and Autumn are the busiest seasons.
 
+![](Cyclistics-bikes_Project/charts/Member%20vs%20Casuals.png)
+
 ## Key Insights
 
 ## Conclusions
