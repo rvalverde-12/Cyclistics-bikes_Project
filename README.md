@@ -115,7 +115,22 @@ nrow(subset(clean_data, ride_duration < 0))
   <img src= charts/Member%20vs%20Casuals.png width="600"/> </p> <br>
   
  <p align="center">
-  <img src= charts/Bike%20Preference.png width="600"/> </p>
+  <img src= charts/Bike%20Preference.png width="600"/> </p><br>
+  
+  <p align="center">
+  <img src= charts/Weekly_Usage.png width="600"/> </p><br>
+  
+  <p align="center">
+  <img src= charts/Season.png width="600"/> </p><br>
+  
+  <p float="left">
+  <img src= charts/Avg_Duration.png width="500"/>
+  <img src= charts/Avg_Distance.png width="500"/>
+  </p>
+
+
+  
+ 
 
 ## Key Insights
 
