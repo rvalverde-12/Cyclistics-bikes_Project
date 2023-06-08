@@ -106,27 +106,69 @@ nrow(subset(clean_data, ride_duration < 0))
 
 ## **Analysis**
 
-* Classic Bikes are more popular.
-* Saturday is the busiest day in general
-* Weekends are the busiest days for casuals, but members tend to use the bikes more during the week.
-* Summer and Autumn are the busiest seasons.
+<ol>
+  <li>
+    User Composition:
+    <ul>
+      <li>
+        61% of all rides are performed by Members, indicating a significant user base within the bike share program.
+        <br>
+        <p align="center">
+          <img src="charts/Member%20vs%20Casuals.png" width="600"/>
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    Bike Preference:
+    <ul>
+      <li>
+        Classic Bikes are more popular among users, indicating a preference for this bike type over other options. It would be interesting to explore the reasons behind this preference and assess if any improvements or adjustments can be made to cater to user preferences.
+        <br>
+        <p align="center">
+          <img src="charts/Bike%20Preference.png" width="600"/>
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    Usage Patterns by User Type:
+    <ul>
+      <li>
+        Weekends are the busiest days for casual riders, suggesting that individuals use the bike share service for recreational purposes or weekend activities.
+        <br>
+        <p align="center">
+          <img src="charts/Hourly_analysis.png" width="700"/>
+        </p>
+      </li>
+      <li>
+        Members tend to use the bikes more during the weekdays, implying that they utilize the bikes for commuting to work or other regular activities. This observation is further supported by the hourly analysis, which shows usage peaks at 7-8 AM and 4-5 PM, aligning with typical commuting hours.
+        <br>
+        <p align="center">
+          <img src="charts/Weekly_Usage.png" width="600"/>
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    Ride Duration and Distance:
+    <ul>
+      <li>
+        Casual rides typically take longer than rides by members, indicating that casual users may engage in more leisurely or exploratory trips. Understanding the factors contributing to longer casual rides can help tailor marketing efforts or develop targeted services to cater to their preferences.
+      </li>
+      <li>
+        Casual riders also cover more distances compared to members, suggesting a different usage pattern or purpose for bike usage. Exploring the reasons behind this difference can provide insights into the needs and motivations of different user segments.
+      </li>
+    </ul>
+   </ol>
+    <p style="float: left;">
+      <img src="charts/Avg_Duration.png" width="500"/>
+      <img src="charts/Avg_Distance.png" width="500"/>
+   
 
-<p align="center">
-  <img src= charts/Member%20vs%20Casuals.png width="600"/> </p> <br>
-  
- <p align="center">
-  <img src= charts/Bike%20Preference.png width="600"/> </p><br>
-  
-  <p align="center">
-  <img src= charts/Weekly_Usage.png width="600"/> </p><br>
-  
-  <p align="center">
+
+   <p align="center">
   <img src= charts/Season.png width="600"/> </p><br>
-  
-  <p float="left">
-  <img src= charts/Avg_Duration.png width="500"/>
-  <img src= charts/Avg_Distance.png width="500"/>
-  </p>
 
 
   
