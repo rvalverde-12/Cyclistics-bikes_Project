@@ -106,6 +106,8 @@ nrow(subset(clean_data, ride_duration < 0))
 
 ## **Analysis**
 
+### Key Insights
+
 <ol>
   <li>
     User Composition:
@@ -158,22 +160,39 @@ nrow(subset(clean_data, ride_duration < 0))
       </li>
       <li>
         Casual riders also cover more distances compared to members, suggesting a different usage pattern or purpose for bike usage. Exploring the reasons behind this difference can provide insights into the needs and motivations of different user segments.
+     </li>
+    </ul>
+ <div style="white-space: nowrap;">
+  <img src="charts/Avg_Duration.png" width="500" style="display: inline-block;">
+  <img src="charts/Avg_Distance.png" width="500" style="display: inline-block;">
+</div>
+  </li>
+  <li>
+    Seasonal Trends:
+    <ul>
+      <li>
+        Summer and Autumn emerge as the busiest seasons for bike usage. This trend could be attributed to favorable weather conditions during these seasons, making cycling a more appealing mode of transportation or leisure activity. It would be valuable to analyze the impact of weather conditions on bike usage and explore strategies to maintain user engagement during less favorable seasons.
       </li>
     </ul>
-   </ol>
-    <p style="float: left;">
-      <img src="charts/Avg_Duration.png" width="500"/>
-      <img src="charts/Avg_Distance.png" width="500"/>
-   
+  </li>
+</ol>
+        <p align="center">
+          <img src="charts/Season.png" width="600"/>
+        </p>
 
-
-   <p align="center">
-  <img src= charts/Season.png width="600"/> </p><br>
-
-
-  
- 
-
-## Key Insights
 
 ## Conclusions
+<ul>
+  <li>
+    <strong>Targeted Marketing:</strong> Develop marketing campaigns that highlight the benefits of membership, such as cost savings, exclusive perks, or priority access to bikes during peak hours. Emphasize how becoming a member can enhance their overall biking experience.
+  </li>
+  <li>
+    <strong>Flexible Membership Options:</strong> Offer flexible membership plans tailored to the needs of casual users. For example, introduce short-term or pay-as-you-go options that provide the convenience and cost-effectiveness of membership without a long-term commitment.
+  </li>
+  <li>
+    <strong>Membership Savings:</strong> Showcase the potential savings by becoming a member. Highlight the reduced rates, discounted fees for longer rides, and any other exclusive benefits that members enjoy.
+  </li>
+  <li>
+    <strong>Incentives and Rewards:</strong> Create incentives for casual users to become members, such as discounted membership rates, referral programs, or loyalty rewards. Encourage current members to refer casual users by offering rewards or discounts for successful referrals.
+  </li>
+</ul>
