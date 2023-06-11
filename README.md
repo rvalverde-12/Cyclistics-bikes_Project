@@ -147,15 +147,15 @@ nrow(subset(clean_data, ride_duration < 0))
       <li>
         Weekends are the busiest days for casual riders, suggesting that individuals use the bike share service for recreational purposes or weekend activities.
         <br>
-        <p align="center">
-          <img src="charts/Hourly_analysis.png" width="700"/>
+         <p align="center">
+          <img src="charts/Weekly_Usage.png" width="600"/>
         </p>
       </li>
       <li>
         Members tend to use the bikes more during the weekdays, implying that they utilize the bikes for commuting to work or other regular activities. This observation is further supported by the hourly analysis, which shows usage peaks at 7-8 AM and 4-5 PM, aligning with typical commuting hours.
         <br>
-        <p align="center">
-          <img src="charts/Weekly_Usage.png" width="600"/>
+       <p align="center">
+          <img src="charts/Hourly_analysis.png" width="700"/>
         </p>
       </li>
     </ul>
@@ -192,15 +192,16 @@ nrow(subset(clean_data, ride_duration < 0))
 ## Conclusions
 <ul>
   <li>
-    <strong>Targeted Marketing:</strong> Develop marketing campaigns that highlight the benefits of membership, such as cost savings, exclusive perks, or priority access to bikes during peak hours. Emphasize how becoming a member can enhance their overall biking experience.
+    <strong>Develop Partnerships with Local Businesses:</strong> Collaborate with local businesses, particularly those that attract casual riders, to offer joint promotions or discounts. For example, partnering with outdoor gear stores or tourist attractions can provide added value to casual riders who may engage in more leisurely or exploratory trips. This addresses the finding that casual riders tend to cover more distances.
   </li>
   <li>
-    <strong>Flexible Membership Options:</strong> Offer flexible membership plans tailored to the needs of casual users. For example, introduce short-term or pay-as-you-go options that provide the convenience and cost-effectiveness of membership without a long-term commitment.
+    <strong>Loyalty and Referral Programs:</strong> Implement loyalty programs to reward regular users during the lower months. Offer incentives such as free ride credits, exclusive perks, or priority bike access. Additionally, encourage current users to refer their friends, family, or colleagues to join the bike share service by providing referral bonuses or discounts.
   </li>
   <li>
-    <strong>Membership Savings:</strong> Showcase the potential savings by becoming a member. Highlight the reduced rates, discounted fees for longer rides, and any other exclusive benefits that members enjoy.
+    <strong>Membership Savings:</strong> Emphasize the convenience and cost savings of being a member, especially for frequent riders. Showcase how membership allows for easy access to bikes during peak hours and offers discounted rates compared to casual usage. This addresses the finding that members tend to use bikes more during the week, potentially for commuting purposes.
   </li>
   <li>
-    <strong>Incentives and Rewards:</strong> Create incentives for casual users to become members, such as discounted membership rates, referral programs, or loyalty rewards. Encourage current members to refer casual users by offering rewards or discounts for successful referrals.
+    <strong>Offer Exclusive Weekend Promotions:</strong> Create special weekend promotions or packages specifically targeted towards casual riders. Highlight the benefits of becoming a member for weekend activities, such as extended ride durations or discounts for popular leisure destinations. This aligns with the finding that weekends are the busiest days for casual riders.
+
   </li>
 </ul>
