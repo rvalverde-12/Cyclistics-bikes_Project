@@ -170,9 +170,9 @@ nrow(subset(clean_data, ride_duration < 0))
         Casual riders also cover more distances compared to members, suggesting a different usage pattern or purpose for bike usage. Exploring the reasons behind this difference can provide insights into the needs and motivations of different user segments.
      </li>
     </ul>
- <div style="white-space: nowrap;">
-  <img src="charts/Avg_Duration.png" width="500" style="display: inline-block;">
-  <img src="charts/Avg_Distance.png" width="500" style="display: inline-block;">
+<div style="white-space: nowrap;">
+  <img src="charts/Avg_Duration.png" width="480" style="display: inline-block;">
+  <img src="charts/Avg_Distance.png" width="480" style="display: inline-block;">
 </div>
   </li>
   <li>
@@ -189,7 +189,8 @@ nrow(subset(clean_data, ride_duration < 0))
         </p>
 
 
-## Conclusions
+## Strategies to Engage Casual Users
+
 <ul>
   <li>
     <strong>Develop Partnerships with Local Businesses:</strong> Collaborate with local businesses, particularly those that attract casual riders, to offer joint promotions or discounts. For example, partnering with outdoor gear stores or tourist attractions can provide added value to casual riders who may engage in more leisurely or exploratory trips. This addresses the finding that casual riders tend to cover more distances.
